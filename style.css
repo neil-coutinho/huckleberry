@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  --white: hsl(0deg, 0%, 100%);
+  --black: hsl(0deg, 0%, 0%);
+  --dark: hsl(0deg, 0%, 30%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+strong {
+  color: var(--primary);
+}
+
+.max-width-wrapper {
+}
+
+.intro-chunk {
+  padding: 16px;
+}
+main {
+  background-color: var(--medium);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 16px;
+}
+
+/* Add styles here! */
