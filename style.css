@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 :root {
@@ -13,6 +14,8 @@
   --very-dark: hsl(0deg, 0%, 10%);
   --medium: hsl(0deg, 0%, 40%);
   --light: hsl(0deg, 0%, 60%);
+  --font: "Lato", sans-serif;
+  --section-padding: 32px;
 }
 
 html,
@@ -20,6 +23,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: var(--font);
+}
+p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 strong {
@@ -30,17 +38,32 @@ strong {
 }
 
 .intro-chunk {
-  padding: 16px;
+  border-bottom: 6px solid var(--dark);
+  padding: var(--section-padding);
 }
+
 main {
-  background-color: var(--medium);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  background-color: var(--light);
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .card {
   background-color: var(--white);
-  padding: 16px;
+  border-bottom: 6px solid var(--dark);
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+}
+
+.card h2 {
+  background-color: var(--secondary);
+  border-bottom: 6px solid var(--secondary-dark);
+  width: fit-content;
+  padding: var(--section-padding);
+  margin-left: -32px;
+  font-size: 1rem;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* Add styles here! */
