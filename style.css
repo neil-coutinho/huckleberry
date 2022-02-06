@@ -53,6 +53,7 @@ main {
   border-bottom: 6px solid var(--dark);
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
+  padding-top: 5px;
 }
 
 .card h2 {
